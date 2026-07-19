@@ -102,17 +102,35 @@
 
 
 #theme {
-    position:absolute;
-    top:20px;
-    right:20px;
+    position: fixed;
+    top: 25px;
+    right: 25px;
 
-    border:none;
-    background:#111;
-    color:white;
+    width: 45px;
+    height: 45px;
 
-    width:45px;
-    height:45px;
+    border-radius: 50%;
+    border: none;
 
-    border-radius:50%;
-    cursor:pointer;
+    background: #111;
+    color: #d4af37;
+
+    font-size: 20px;
+
+    cursor: pointer;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+}
+
+#theme:hover {
+    transform: rotate(20deg) scale(1.1);
+    background: #d4af37;
+    color: #111;
 }
